@@ -1,0 +1,20 @@
+{
+    "name": "Name of Your Task Family",
+    "tasks": [
+        // If the family contains multiple tasks, copy and paste this object for each additional task.
+        {
+            "name": "default",
+            "expertise": [
+                // What expertise should someone have to complete the task? 
+                // This list can contain one or more of the following:
+                "softwareEngineering",
+                "machineLearning",
+                "cybersecurity",
+                "postTrainingEnhancement", // e.g. prompt engineering
+                "cybercrime" // e.g. scams
+            ],
+            "summary": "One or two sentences describing this particular task. Note anything that makes it different from others in the family.",
+            "scoring": "automatic" // "automatic" or "manual"
+        }
+    ]
+}
