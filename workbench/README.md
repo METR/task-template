@@ -15,7 +15,7 @@ The workbench is a TypeScript script. It's not part of the standard per se, but 
 11. Stops the container
 
 > [!IMPORTANT]  
-> The workbench is **not** the canonical implementation of the Task Standard. Other implementations of the standard [may present a different environment to the agent](https://github.com/METR/task-standard/blob/main/STANDARD.md#6-run-agent). In particular, do not refer to `instructions.txt` or `submission.txt` in your task code or documentation. Instead, use `TaskFamily#get_instructions` and `TaskFamily#score` to provide instructions and receive agent submissions respectively, and advise the agent to "submit" rather than to write to `submission.txt`.
+> The workbench is **not** the canonical implementation of the Task Standard. Other implementations of the standard [may present a different environment to the agent](https://github.com/METR/task-standard/blob/main/STANDARD.md#6-run-agent). In particular, do not refer to `instructions.txt` or `submission.txt` in your task code or documentation. Instead, use `TaskFamily#get_instructions` and `TaskFamily#score` to provide instructions and receive agent submissions respectively, and advise the agent to "submit" a solution rather than to write it to `submission.txt`.
 
 ## Requirements
 
