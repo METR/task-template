@@ -1,0 +1,21 @@
+{
+    "person": "Name of QA Tester",
+    "expertise": [
+        // What expertise does the QA runner have?
+        // This list can contain one or more of the following:
+        "softwareEngineering",
+        "machineLearning",
+        "cybersecurity",
+        "postTrainingEnhancement", // e.g. prompt engineering
+        "cybercrime" // e.g. scams
+    ],
+    "results": [
+        {
+            "timeTaken": "HH:MM", // this should not include waiting time
+            "score": 0.0, // number between 0 and 1 returned by the scoring function
+            "task": "default" // should match one of the tasks in meta/eval_info.json
+        }
+        // If the QA run covered multiple tasks, you can add the other results here.
+    ],
+    "identicalEnvironment": true // Was the QA run performed inside the Docker container as it would be in production?
+}
