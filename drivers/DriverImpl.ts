@@ -31,7 +31,7 @@ function getRequiredEnv(taskSetupData: TaskSetupData, env: Env): Env {
 let taskHelperCode: string | undefined
 function getDefaultTaskHelperCode(): string {
   if (taskHelperCode == null) {
-    taskHelperCode = readFromAncestor('./task-standard/drivers/taskhelper.py')
+    taskHelperCode = readFromAncestor('./drivers/taskhelper.py')
   }
   return taskHelperCode
 }
