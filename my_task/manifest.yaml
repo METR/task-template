@@ -1,0 +1,25 @@
+meta:
+  name: null
+  version: 1.0.0
+  canary: 00000000-0000-0000-0000-000000000000 # Replace with a new UUID4
+  short_description: null
+  long_description: null
+  protected_paths: null
+  summary_md_path: null
+  detail_md_path: null
+  expertise: null
+  data_contamination: null
+tasks:
+  example:
+    meta:
+      source: null
+      status: implementation
+      successful_demo_run_id: null
+      expertise: null
+      task_description: null
+      persons_to_credit: null
+      scoring:
+        manual: null
+        intermediate: null
+        binary: null
+      extra: null
