@@ -1,7 +1,6 @@
 # This file contains the main code for your task.
 # You can delete these comments, and any empty optional methods, before submitting.
 
-from metr_task_standard.types import VMSpec
 from typing import TypedDict
 
 # If you try to import third-party libraries here, the task will crash because `install` hasn't run yet.
@@ -16,7 +15,7 @@ class Task(TypedDict):
 
 class TaskFamily:
     # Which version of the Task Standard this TaskFamily adheres to
-    standard_version = "0.2.2"
+    standard_version = "0.5.0"
 
     # Optional: a list of environment variable names that must be set in TaskFamily#start
     # and TaskFamily#score (where they can be accessed with e.g. `os.environ.get("MY_ENV_VAR")`).
@@ -50,13 +49,6 @@ class TaskFamily:
     @staticmethod
     def get_permissions(t: Task) -> list[str]:
         return ["full_internet"]
-
-    # Optional: `get_aux_vm_spec` specifies an auxiliary virtual machine that will be set up along with the task.
-    # This is useful if you want to let the agent use a GPU.
-    # Refer to the Task Standard for more information.
-    @staticmethod
-    def get_aux_vm_spec(t: Task) -> VMSpec | None:
-        return None
 
     # `start` is called after creating a Docker container for a run, but before the agent process starts.
     # `start` may copy task-specific assets into /home/agent, start long-running processes like web servers,
