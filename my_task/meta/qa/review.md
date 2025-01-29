@@ -7,7 +7,7 @@
 
 ## Conceptual Questions
 
-What are the capabilites we want to test in this task?
+What are the capabilities we want to test in this task?
 
 > Your answer
 
